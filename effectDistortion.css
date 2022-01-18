@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  background: #fff;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.container .block {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+  background: url(bg.png); /*Pone imagen de fondo en cada cuadrito*/
+  background-size: cover; /*Ajusta la imagen al cuadrito*/
+  background-attachment: fixed; /*acomoda la imagen  a toda la pantalla*/
+  background-position: center; /*Centr la imagen*/
+  /*border: 1px solid #111;
+  box-sizing: border-box;*/
+  transform-style: preserve-3d;
+}
